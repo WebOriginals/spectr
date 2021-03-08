@@ -1,0 +1,29 @@
+section.sec-form-img-l
+    .container
+        .form-img-l__title.title-block Всё на своих местах
+        .body-foorm-img-l
+            .wr-l
+                .form-img-l__title.title-block Всё на своих местах
+                p.descr Просто оставьте свои контакты и минимальную информацию о своей квартире, а остальное за нами!
+                form.form-tipe-room
+                    .body-inp
+                        input.form-tipe-room__input(placeholder=" Площадь в м2")
+                        .wrapper-size
+                            .wrapper-input
+                                input(type="hidden" value="")
+                                .choice-of-size.select-value.price-text Тип помещения
+
+                            .ii-product__selectors-wrp.js_size_selector
+                                .wrapper-list
+                                    .list
+                                        .list__itams(data-value="1") Квартра
+                                        .list__itams(data-value="2") Комерция
+                                        .list__itams(data-value="3") Дом
+                        input.form-tipe-room__input(placeholder=" Телефон" type="tel")
+
+                    .form-tipe-room__btn.button_blue отправить
+                    p.politica Нажав на кнопку, я даю согласие на обработку <a>персональных данных</a>
+            .wrapper-right
+                .form-img.b-lazy(data-src="img/form.png")
+
+

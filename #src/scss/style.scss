@@ -1,0 +1,27 @@
+//ОСНОВНЫЕ СТИЛИ
+@import "mixins.scss";
+@import "reset_style.scss";
+@import "origin_style.scss";
+
+
+//@import "main/greatdeals.scss";
+
+
+//о нас
+@import "about-us/about-us.scss";
+
+
+//кейс
+@import "card/card.scss";
+
+//Комплектация под ключ
+@import "configuration/text-ic";
+@import "configuration/text-long-ic";
+@import "configuration/form-img-l";
+@import "configuration/slider-catalog";
+@import "configuration/slider-reviews";
+@import "configuration/step";
+@import "configuration/img-duo";
+@import "configuration/brends";
+@import "configuration/form-bottom";
+

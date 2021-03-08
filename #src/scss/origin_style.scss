@@ -1,0 +1,119 @@
+//-----------ОСНОВНЫЕ ЦВЕТА------------------
+$color_1b: #222;
+$color_2w: #fff;
+$color_3b: #0EBAB9;
+$color_4bb: #0D2839;
+$color_6g: #dcd9d978;
+$color_5lb: rgba(1, 90, 254, 0.2);
+$link-img: 'assets';
+
+
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  color: $color_1b;
+  font-weight: 400;
+  min-height: 100vh;
+  line-height: 1.4;
+  background: $color_2w;
+}
+
+
+
+//-----------Кнопки------------------
+
+.button_blue {
+  display: block;
+  position: relative;
+  color: $color_2w;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: 1s;
+  width: 100%;
+  background: $color_3b;
+  border: 2px solid $color_3b;
+  @include adaptiv-font(17, 15);
+  text-transform: uppercase;
+
+  font-weight: bold;
+
+  &:hover{
+    background: $color_4bb;
+    border: 2px solid $color_4bb;
+  }
+
+  @include mq('2K') {
+    font-size: 18px;
+
+  }
+  @include mq('tablet') {
+    width: fit-content;
+  }
+}
+
+
+
+
+//------------Заголовки и подзоголовки-----------------
+
+
+
+.title-block {
+  @include adaptiv-font(36, 24);
+  font-weight: 400;
+  position: relative;
+}
+
+//*=================Миксины====================
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+%background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//=============================================
+
+
+//======БЛОКИ ПОКАЗАТЬ И СКРЫТЫ НА МОБИЛЕ======
+.MOBILE {
+  @media (min-width: 990px) {
+    display: none;
+  }
+}
+
+.DESCKTOP {
+  display: none;
+  @media (min-width: 991px) {
+    display: flex;
+
+  }
+}
+
+//*=============================================
+
+
+//*===============ВСПООГАЮЩИЕ КЛАССЫ ==================
+.NO-OUTLINE {
+  outline: none;
+}
+
+.square {
+  li {
+    padding-left: 33px;
+    @if ($link-img == '') {
+      background-image: url("");
+    } @else {
+      background-image: url($link-img + "");
+    }
+    background-position: left 5px;
+    background-repeat: no-repeat;
+  }
+}
+
+//*=============================================

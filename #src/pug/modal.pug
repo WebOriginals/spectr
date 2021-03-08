@@ -1,0 +1,177 @@
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#kidsgo-modal") Запустить модальное окно
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#basket-del") del
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#numder-modal") колличество товара
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#city_1") город1
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#city_2") город2
+button.btn.btn-primary(type="button" data-toggle="modal" data-target="#fav-modal-message") Брик
+
+.modal.kidsgo-modal.fade#kidsgo-modal
+    .modal-dialog.kidsgo-modal-dialog
+        .modal-content.kidsgo-modal-content
+            button.close.Closekidsgo(type="button" data-dismiss="modal" aria-label="Close")
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L24.5 24.5" stroke="#F5DF4D" stroke-width="3"/>
+                <path d="M24.5 2L2 24.5" stroke="#F5DF4D" stroke-width="3"/>
+                </svg>
+            .modal-body.kidsgo-modal-body
+                .kidsgo-modal-body__title.title-block Получить консультацию
+                form.formkidsgo
+                    .bodyFr
+                        .wrformkidsgo
+                            input.inputkidsgo(placeholder="Имя*")
+                        .wrformkidsgo
+                            input.inputkidsgo(placeholder="Телефон*")
+                        .wrformkidsgo
+                            input.inputkidsgo(placeholder="Е-mail")
+                        .wrformkidsgo
+                            input.inputkidsgo(placeholder="Ваш комментарий")
+                    .polit
+                        p  Нажав на кнопку, я даю согласие на <a>обработку персональных данных</a>
+                    .wrformkidsgoBtn
+                        .form-btn.button.btn-modal отправить
+
+
+.modal.kidsgo-modal-del.basket-modal.fade#basket-del
+    .modal-dialog.kidsgo-modal-dialog
+        .modal-content.kidsgo-modal-content
+            .modal-body.kidsgo-modal-body
+                .kidsgo-modal-body__title-del Точно удалить?
+                form.formkidsgo
+                    .wrformkidsgoBtn-del
+                        .form-btn-yes.del-btn  ДА
+                        .form-btn-no.del-btn Нет
+
+
+
+.modal.kidsgo-modal-number.basket-modal.fade#numder-modal
+    .modal-dialog.kidsgo-modal-dialog
+        .modal-content.kidsgo-modal-content
+            button.close.Closekidsgo(type="button" data-dismiss="modal" aria-label="Close")
+                img(src="img/ic/close.svg")
+            .modal-body.kidsgo-modal-body
+                .kidsgo-modal-body__title-number Выберите количество
+                form.formkidsgo
+                    ul.wrformkidsgoList-number
+                        li 1
+                        li 2
+                        li 3
+                        li 4
+                        li 5
+
+
+
+.modal.kidsgo-modal-del.city-modal.fade#city_1
+    .modal-dialog.kidsgo-modal-dialog
+        .modal-content.kidsgo-modal-content
+            button.close.Closekidsgo(type="button" data-dismiss="modal" aria-label="Close")
+                img(src="img/ic/close.svg")
+            .modal-body.kidsgo-modal-body
+                .kidsgo-modal-body__title-del Ваш город Рязань?
+                form.formkidsgo
+                    .wrformkidsgoBtn-del
+                        .form-btn-yes.del-btn  ДА
+                        .form-btn-no.del-btn Нет
+
+
+.modal.kidsgo-modal-del.city-modal.fade#city_2
+    .modal-dialog.kidsgo-modal-dialog.city
+        .modal-content.kidsgo-modal-content.city
+            button.close.Closekidsgo(type="button" data-dismiss="modal" aria-label="Close")
+                img(src="img/ic/close.svg")
+            .modal-body.kidsgo-modal-body
+                .kidsgo-modal-body__title-city Выберите свой город
+                form.formkidsgo-city-fl
+                    .list-body
+                        ul.list-address-main
+                            li
+                                a(href="#") Москва и Московская область
+                            li
+                                a(href="#") Москва и Московская область
+                            li
+                                a(href="#") Москва и Московская область
+                            li
+                                a(href="#") Москва и Московская область
+                            li
+                                a(href="#") Москва и Московская область
+                            li
+                                a(href="#") Москва и Московская область
+                            li
+                                a(href="#") Москва и Московская область
+                            li
+                                a(href="#") Москва и Московская область
+                        .list-skroll
+                            ul.list-address
+                                li
+                                    a(href="#") Aосква и Московская область
+                                li
+                                    a(href="#") Aосква и Московская область
+                                li
+                                    a(href="#") Aосква и Московская область
+                                li
+                                    a(href="#") Aосква и Московская область
+                                li
+                                    a(href="#") Aосква и Московская область
+                                li
+                                    a(href="#") Aосква и Московская область
+                                li
+                                    a(href="#") Aосква и Московская область
+                                li
+                                    a(href="#") Aосква и Московская область
+                                li
+                                    a(href="#") Aосква и Московская область
+                                li
+                                    a(href="#") Босква и Московская область
+                                li
+                                    a(href="#") Босква и Московская область
+                                li
+                                    a(href="#") Босква и Московская область
+                                li
+                                    a(href="#") Босква и Московская область
+                                li
+                                    a(href="#") Босква и Московская область
+                                li
+                                    a(href="#") Босква и Московская область
+                                li
+                                    a(href="#") Восква и Московская область
+                                li
+                                    a(href="#") Восква и Московская область
+                                li
+                                    a(href="#") Восква и Московская область
+                                li
+                                    a(href="#") Восква и Московская область
+                                li
+                                    a(href="#") Восква и Московская область
+                                li
+                                    a(href="#") Восква и Московская область
+                                li
+                                    a(href="#") Восква и Московская область
+                                li
+                                    a(href="#") Восква и Московская область
+                                li
+                                    a(href="#") Восква и Московская область
+                                li
+                                    a(href="#") Госква и Московская область
+                                li
+                                    a(href="#") Госква и Московская область
+                                li
+                                    a(href="#") Госква и Московская область
+                                li
+                                    a(href="#") Госква и Московская область
+                                li
+                                    a(href="#") Госква и Московская область
+                                li
+                                    a(href="#") Госква и Московская область
+                                li
+                                    a(href="#") Досква и Московская область
+                                li
+                                    a(href="#") Досква и Московская область
+
+
+                    .wrapper-bottom
+                        .bottom-title Или найдите и выберите свой город
+                        input#register3.wrapper-field-input
+                        .wrformkidsgoBtn-del
+                            .form-btn-yes.del-btn  Выбрать
+
+
+

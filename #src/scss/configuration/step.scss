@@ -1,0 +1,192 @@
+.sec-process-work {
+  padding: 25px 0 ;
+
+  @include mq('tablet-wide') {
+    padding: 80px 0;
+  }
+
+}
+
+.process-work-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.process-work-subtitle {
+  text-align: center;
+  @include adaptiv-font(24, 16);
+
+  @include mq('tablet-wide') {
+    width: 670px;
+    margin: auto;
+  }
+}
+
+.list-process-work{
+  padding: 50px 0;
+
+  @include mq('tablet') {
+    padding: 80px 0;
+  }
+  @include mq('desktop') {
+    padding: 100px 0;
+  }
+}
+
+.list-row {
+  position: relative;
+  display: flex;
+  @include adaptiv-margin-bottom(115, 80);
+  @if ($link-img == '') {
+    background-image: url("./../../img/ic/point2.svg");
+  } @else {
+    background-image: url($link-img + "/img/ic/point2.svg");
+  }
+  background-position: left;
+  background-repeat:  no-repeat;
+  padding-left: 45px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 1023px){
+    &:not(:last-child):before {
+      content: '';
+      width: 2px;
+      height: calc(100% + 80px);
+      position: absolute;
+      left: 14px;
+      background: #0ebab9;
+      top: 50%;
+    }
+  }
+
+  @include mq('tablet-wide') {
+    width: calc(50% + 15px);
+    padding-right: 100px;
+    @if ($link-img == '') {
+      background-image: url("./../../img/ic/point2.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/point2.svg");
+    }
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 0;
+
+    &:not(:last-child):nth-child(odd):before {
+      content: '';
+      width: 2px;
+      height: calc(100% + 118px);
+      position: absolute;
+      right: 14px;
+      background: #0ebab9;
+      top: 50%;
+    }
+    &:nth-child(even):before {
+      content: '';
+      width: 2px;
+      height: calc(100% + 118px);
+      position: absolute;
+      left: 14px;
+      background: #0ebab9;
+      top: 50%;
+    }
+  }
+
+  @include mq('desktop-wide') {
+    &:not(:last-child):nth-child(odd):before {
+
+      height: calc(100% + 118px);
+    }
+    &:nth-child(even):before {
+
+      height: calc(100% + 118px);
+    }
+  }
+
+}
+
+.list-row-revers {
+  margin-left: auto;
+
+  @include mq('tablet-wide') {
+    padding-right: 0;
+    padding-left: 100px;
+    @if ($link-img == '') {
+      background-image: url("./../../img/ic/point2.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/point2.svg");
+    }
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+
+.list-img {
+  height: 90px;
+  overflow: hidden;
+  flex: 0 0 90px;
+  margin-right: 40px;
+
+  @include mq('tablet-wide') {
+    .list-row-revers & {
+      order: 2;
+      margin-right: 0;
+      margin-left: 40px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+
+  }
+}
+
+.list-text {
+  flex: 1 1 auto;
+
+  @include mq('tablet-wide') {
+    .list-row-revers & {
+      order: 1;
+      text-align: right;
+    }
+  }
+}
+
+.list-text_title {
+  @include adaptiv-font(24, 18);
+  font-weight: bold;
+}
+
+.list-text_description {
+  @include adaptiv-font(18, 16);
+  font-weight: 300;
+}
+
+.process-work_btn{
+  font-weight: 800;
+  margin: auto;
+  padding: 15px;
+
+  @include mq('tablet-wide') {
+    padding: 20px;
+  }
+}
+
+.descr-step{
+  color: $color_3b;
+  @include adaptiv-font(24,22);
+  border: 1px solid $color_3b;
+  padding: 15px;
+  text-align: center;
+  @include mq('tablet-wide') {
+    padding: 35px 40px;
+    width: 80%;
+    margin: 80px auto 0;
+  }
+}
+
+.step__title{
+ @include adaptiv-margin-bottom(50,35);
+}

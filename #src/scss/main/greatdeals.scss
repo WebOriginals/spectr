@@ -1,0 +1,200 @@
+.sec-benefits{
+  padding: 50px 0;
+  @include mq('tablet') {
+    padding: 70px 0;
+  }
+  @include mq('desktop') {
+    padding: 90px 0;
+  }
+}
+
+.body-benefits{
+
+}
+
+.benefits__title{
+  font-weight: 600;
+  @include adaptiv-font(48,36);
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4B5266;
+}
+
+.wrapper-item-stocks{
+  display: grid;
+  @include mq('tablet') {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.item-stock{
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+
+  .stock-title{
+    font-weight: 600;
+    @include adaptiv-font(24,20);
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4B5266;
+  }
+  .stock-img{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &:hover{
+    .stock-title{
+      color: #CBA013;
+    }
+  }
+}
+
+.stocka-all-btn{
+  margin: auto;
+  text-align: center;
+  padding: 15px 45px;
+  font-size: 16px;
+  background: #CBA013;
+  border-radius: 50px;
+  color: white;
+  width: fit-content;
+  cursor: pointer;
+
+  &:hover{
+    background: #587ae9;
+    color: white;
+  }
+}
+
+
+
+
+//slider
+.sec-reviews-sl{
+  padding: 50px 0;
+  @include mq('tablet') {
+    padding: 70px 0;
+  }
+  @include mq('desktop') {
+    padding: 90px 0;
+  }
+}
+
+.wrapper-reviews-sl{
+
+}
+.reviews-container{
+  padding: 5px;
+
+  .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+
+.reviews-slide{
+  padding: 40px 25px;
+  border: 1px solid #CBA013;
+  position: relative;
+  height: 100%;
+}
+.header-review{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.header-review__name{
+  font-weight: 600;
+  font-size: 18px;
+}
+.header-review__date{
+  font-weight: 300;
+  font-size: 12px;
+}
+.descript-review{
+  font-weight: 300;
+  font-size: 16px;
+  &-original{
+    display: none;
+  }
+}
+.more__btn{
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer;
+
+
+  &:hover{
+    color: #CBA013;
+  }
+  &.show{
+    display: block;
+    padding: 5px;
+  }
+}
+
+//modal
+
+.reviews-modal-content{
+  border-radius: 0;
+  border: 2px solid #CBA013;
+}
+.reviews-modal-dialog{
+  @include mq('tablet') {
+    max-width: 700px;
+  }
+}
+
+.CloseReviews{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+  cursor: pointer;
+  &:focus,&:hover{
+    border: none;
+    outline: none;
+  }
+}
+.reviews-modal-body{
+  padding: 55px 44px;
+
+}
+
+//temperature
+.T{
+ background: #4B5266;
+  position: relative;
+}
+.body-temperature {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.temperature-all{
+  display: flex;
+
+  @include adaptiv-font(18,16);
+  color: white;
+  span{
+    @include adaptiv-font(36,24);
+    margin-left: 15px;
+  }
+  .p{
+    align-self: center;
+  }
+}
